@@ -1,0 +1,27 @@
+body {
+  background-color: #000;
+  color: #0ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+  }
+}
